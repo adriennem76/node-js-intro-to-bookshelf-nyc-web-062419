@@ -16,7 +16,9 @@ const bookshelf = require('bookshelf')(knex);
 
 // This is a good place to start!
 
-
+const User = bookshelf.Model.extend({
+  tableName: 'users'
+});
 
 
 // Exports for Server hoisting.
